@@ -1,3 +1,9 @@
+#########
+# rgb332.py - 8bit color palette
+#
+# © 2015 - Szymon 'polemon' Bereziak <polemon@gmail.com>
+# License: ISC
+
 import numpy as np
 import contextlib
 import math
@@ -14,5 +20,5 @@ for i in range(len(palette)):
 
 if __name__ == "__main__":
     print("palette:")
-    print(np.vectorize("%x".__mod__)(palette))
+    print(np.vectorize("%6x".__mod__)(palette))
 
